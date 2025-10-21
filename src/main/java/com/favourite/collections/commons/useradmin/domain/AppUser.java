@@ -55,7 +55,7 @@ public class AppUser extends AbstractAuditableCustom {
 
 	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "cart_id")
-	private Cart cart = new Cart();
+	private Cart cart;
 
 	public Cart getCart() {
 		if (cart == null) {
